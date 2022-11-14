@@ -15,19 +15,17 @@
 </head>
 <body>
     <main>
-        <div class="container">
-            <div class="carouselbox">
-                <div class="carousel_content" id="content">
-                    <img class="d-block" src="img/01.webp" alt="">
-                    <img class="d-none" src="img/02.webp" alt="">
-                    <img class="d-none" src="img/03.webp" alt="">
-                    <img class="d-none" src="img/04.webp" alt="">
-                    <img class="d-none" src="img/05.webp" alt="">
-                </div>
-                <div class="carousel_controls">
-                    <i class="fa fa-arrow-circle-up fa-solid fa-fw fa-2x" aria-hidden="true" id="arrowup"></i>
-                    <i class="fa fa-arrow-circle-down fa-solid fa-fw fa-2x" aria-hidden="true" id="arrowdown"></i>
-                </div>
+        <div class="mycarouselbox">
+            <div class="mycarousel_content">
+                <img class="d-block mycarousel_item" src="img/01.webp" alt="">
+                <img class="d-none mycarousel_item" src="img/02.webp" alt="">
+                <img class="d-none mycarousel_item" src="img/03.webp" alt="">
+                <img class="d-none mycarousel_item" src="img/04.webp" alt="">
+                <img class="d-none mycarousel_item" src="img/05.webp" alt="">
+            </div>
+            <div class="mycarousel_controls">
+                <i class="fa fa-arrow-circle-up fa-solid fa-fw fa-2x" aria-hidden="true" id="arrowup" onclick="Up ()"></i>
+                <i class="fa fa-arrow-circle-down fa-solid fa-fw fa-2x" aria-hidden="true" id="arrowdown" onclick="Down ()"></i>
             </div>
         </div>
     </main>

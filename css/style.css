@@ -1,29 +1,57 @@
-.carouselbox {
+.mycarouselbox {
     max-width: 1280px;
     height: 500px;
     width: 100%;
     position: relative;
 }
 
-.carousel_controls {
-    height: 100%;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: space-between;
-    margin: auto;
-    z-index: 10;
-    position: absolute;
-    padding: 20px 0;
-    translate: -50% 0%;
-    left: 50%;
-    top: 0;
+.mycarousel_controls {
+    display: none;
+    animation: dissolveout 1s;
 }
 
-.carousel_controls i {
+.mycarouselbox:hover .mycarousel_controls{
+    display: block;
+    animation: dissolvein 1s;
+}
+
+
+@keyframes dissolvein {
+    0% {
+      opacity: 0;
+    }
+    100% {
+        opacity: 1;
+          }
+}
+@keyframes dissolveout {
+    0% {
+      opacity: 1;
+    }
+    100% {
+        opacity: 0;
+          }
+}
+
+.mycarousel_controls i {
     color: rgb(180, 180, 180);
 }
 
-.carousel_content {
+#arrowup {
+    position: absolute;
+    top: 20px;
+    translate: -50% 0%;
+    left: 50%;
+}
+
+#arrowdown {
+    position: absolute;
+    bottom: 20px;
+    translate: -50% 0%;
+    left: 50%;
+}
+
+.mycarousel_content {
     width: 100%;
     height: 100%;
     display: flex;
@@ -33,8 +61,9 @@
 
 }
 
-#content img {
-    width: auto;
+.mycarousel_item {
+    width: 100%;
     height: 100%;
+    object-fit: contain;
 }
 
