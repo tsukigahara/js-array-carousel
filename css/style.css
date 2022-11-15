@@ -13,6 +13,7 @@
 .mycarouselbox:hover .mycarousel_controls{
     display: block;
     animation: dissolvein 1s;
+    cursor: pointer;
 }
 
 
